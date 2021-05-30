@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Kamikaze's game!</title>
+        <link rel="stylesheet" media="screen and (max-width: 1900px)" href="pcscreen.css"> <!-- Affichage écran moyen -->
+        <link rel="stylesheet" media="screen and (min-width: 1901px)" href="style.Css"> <!-- Affichage grand écran -->
+        <!-- Au lieu de faire 2 fichiers css, j'aurai pu n'en faire qu'un seul avec la balise @media -->
+    </head>
+    <body onkeyup="konamiCode(event)" onkeydown="playermovement(event)">
+
+
+        <div id="infos">
+            <h1 id="FuelTimer">60s restantes!</h1>
+        </div>
+
+
+        <img src="media/island2.png" id="island2">
+        <img src="media/chest.png" id="chest">
+        <img src="media/plane.png" class="opponent" id="enemy1">
+        <img src="media/plane.png" class="opponent" id="enemy2">
+        <img src="media/plane.png" class="opponent" id="enemy3">
+        <img src="media/plane.png" class="opponent" id="enemy4">
+        <img src="media/compass.png" id="bonus">
+        <div class="opponent" id="enemy5"></div>
+        <img src="media/ship2.png" id="player">
+
+        <section id='gameover'>
+            <div class="gameovertext">
+                <p id="wintext">Tu as perdu!</p>
+            </div>
+            <div class="refreshbutton">
+                <button onclick="history.go(0)" id="winbutton">Réessayer!</button>
+            </div>
+        </section>
+
+        <div id="start">
+            <h1>Bienvenue ! <br> Votre but est de diriger votre magnifique avion japonais droit dans le porte avion ennemi, et ce, sans se faire toucher par les avions, le tout en moins d'une minute!</h1>
+            <h1>Votre avion se déplace avec les flèches directionelles ou ZQSD/WASD.</h1>
+            <button id="jouer" onclick="gamestart()">Jouer!</button>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script> 
+        <script src="https://storage.googleapis.com/codesnippets-cb511.appspot.com/cdn/gsap-collisions-v0.1.js"></script>
+        <script src="scripts/script.js"></script>
+        <script src="scripts/konami.js"></script>   <!-- Script pour l'easter egg Konami Code -->
+        <script src="scripts/shoot.js"></script> <!-- Script pour tirer -->
+    </body>
+</html>

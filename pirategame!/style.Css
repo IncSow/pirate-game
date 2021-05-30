@@ -1,0 +1,183 @@
+
+body{
+    background-image: url(media/8bit_img.jpg);
+    background-size: cover;
+    margin: 0;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+}
+
+img{
+    position: absolute;
+}
+#chest{
+    width: 450px;
+    left: 860px;
+    bottom: 165px;
+    background-image: url(media/chest.png);
+}
+#island1{
+    left: 850px;
+    width: 200px;
+    bottom: 150px;
+    
+}
+
+#island2{
+    width: 250px;
+    left: 120px;
+    top: 450px;
+}
+
+
+
+#player{
+    position: absolute;
+    transform-origin: center;
+    transform: translate(-50%, -50%);
+    width: 150px;
+    left: 0px;
+    top: 0px;
+}
+
+.opponent{
+    width: 180px;
+    display: none;
+
+}
+
+#enemy1{
+    left: 150px;
+    top: 750px;
+}
+
+#enemy2{
+    left: 350px;
+    top: 250px;
+}
+
+#enemy3{
+    left: 800px;
+    top: 450px;
+}
+
+#enemy4{
+    left: 1650px;
+    top: 750px;
+}
+
+#enemy5{
+    background-image: url(media/plane.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 175px;
+
+    z-index: 1;
+}
+
+#infos{
+    color: white;
+    padding-left: 45%;
+    text-align: center;
+    display: none;
+    font-size: 1.5rem;
+}
+
+#jouer{
+    border-radius: 15px;
+    color: black;
+    background-color: darkseagreen;
+    display: inline;
+    font-size: 2rem;
+    width: 200px;
+    height: 200px;
+}
+
+
+#start{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: whitesmoke;
+    text-align: center;
+    background-image: url(media/thumb-1920-809593.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.5rem;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+
+#gameover {
+    position: absolute;
+    width: 100%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    height: 450px;
+    font-size: 2rem;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    padding: 10px;
+    border: 20px solid #3d606e;
+    background-color: black;
+}
+
+#gameover .gameovertext {
+    width: auto;
+    height: auto;
+    color: white;
+    text-align: center;
+    
+    padding: 0px;
+    font-size: 2em;
+}
+
+#gameover .refreshbutton {
+    width: auto;
+    height: auto;
+    
+
+    padding: 0px;
+    font-size: 4em;
+}
+
+button{
+    width: 150px;
+    height: 150px;
+    font-size: 1rem;
+}
+
+button:hover{
+
+    border: 1px solid;
+    padding: 10px;
+    box-shadow: 5px 10px;
+}
+.shot {
+    width: 40px;
+    height: 40px;
+    background: black;
+    border-radius: 100%;
+  
+    position: absolute;
+    right: -5px;
+    bottom: 20px;
+}
+
+#bonus{
+    width: 200px;
+    right: 300px;
+    top: 260px;
+}
